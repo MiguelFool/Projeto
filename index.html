@@ -13,8 +13,8 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#">Curiosidades</a></li>
-                <li><a href="#">Imagens</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="#imagens">Imagens</a></li>
             </ul>
         </nav>
     </header>
@@ -30,12 +30,67 @@
             <img class="nuvem2" src="nuvem.png" alt="">
             <img class="nuvem3" src="nuvem.png" alt="">
             <img class="nuvem4" src="nuvem.png" alt="">
+            <img class="nuvem5" src="nuvem.png" alt="">
+            <div>
             <p>A cultura japonesa é uma jornada de descobertas fascinantes que encantam os sentidos e a alma. Seu tecido cultural é entrelaçado com uma tapeçaria de tradições antigas e inovações modernas, criando uma atmosfera única que é ao mesmo tempo reverenciadora do passado e fervilhante com a energia do futuro.</p>
 
                 <p>Os templos ancestrais, com sua arquitetura majestosa e serenidade espiritual, são pilares da cultura japonesa. Esses locais sagrados não são apenas testemunhas do passado, mas também pontos de encontro entre o divino e o terreno, onde os visitantes podem experimentar uma profunda conexão com a história e a espiritualidade do Japão.</p>
                 
                 <p>A gastronomia japonesa é uma verdadeira obra de arte culinária, caracterizada por sua delicadeza, frescor e atenção aos detalhes. Desde o sabor refinado do sushi até a reconfortante tigela de ramen, cada prato é uma celebração dos ingredientes locais e da habilidade dos chefs em transformá-los em experiências sensoriais memoráveis.</p>
+            </div>
+        </section>
+        <section class="curiosidades" id="curiosidades">
+            <h1>Curiosidades</h1>
+            <img class="nuvem1" src="nuvem.png" alt="">
+            <img class="nuvem2" src="nuvem.png" alt="">
+            <img class="nuvem3" src="nuvem.png" alt="">
+            <img class="nuvem4" src="nuvem.png" alt="">
+            <img class="nuvem5" src="nuvem.png" alt="">
+            <div class="grupo1">
+                <div><p><span>Máquinas de Venda Automática:</span>
+                    Descubra o fascinante mundo das máquinas de venda automática do Japão, onde você pode encontrar de tudo, desde bebidas quentes até lanches saborosos, em quase todas as esquinas.</p></div>
+                <div><p><span>Pontualidade Japonesa:</span><br>
+                    No Japão, os trens são tão pontuais que os atrasos são medidos em segundos, não em minutos. É impressionante como a precisão é levada a sério aqui!</p></div>
+                <div><p><span>Mascotes Fofos: </span><br>
+                    Prepare-se para conhecer uma infinidade de mascotes adoráveis, conhecidos como "yuru-kyara", que representam desde regiões até empresas, tornando até mesmo os eventos mais sérios um pouco mais divertidos.</p></div>
+            </div>
+            <div class="grupo2">
+                <div><p><span>Banheiras Inteligentes:</span> As banheiras no Japão são muito mais do que apenas banheiras. Elas vêm com tudo, desde controles de temperatura até sistemas de entretenimento integrados, garantindo uma experiência de banho verdadeiramente luxuosa.</p></div>
+                <div><p><span>Lendas Urbanas dos Gatos Maneki-neko:</span> Descubra as lendas envolvendo os gatos maneki-neko, conhecidos como gatos da sorte, que são figuras tradicionais japonesas que se acredita trazerem sorte e fortuna aos seus donos.</p></div>
+                <div><p><span>Respeito pelos Idosos:</span><br> No coração da cultura japonesa está o respeito pelos idosos. Desde ceder assentos em transportes públicos até realizar festivais em homenagem aos mais velhos, os japoneses demonstram constantemente sua reverência pelos mais experientes.</p></div>
+            </div>
+        </section>
+        <section class="imagens" id="imagens">
+            <h1>Imagens</h1>
+            <img class="nuvem1" src="nuvem.png" alt="">
+            <img class="nuvem2" src="nuvem.png" alt="">
+            <img class="nuvem3" src="nuvem.png" alt="">
+            <img class="nuvem4" src="nuvem.png" alt="">
+            <img class="nuvem5" src="nuvem.png" alt="">
+            <div class="grupo1">
+                <div><img src="tokyo.jpg" class="img1"></div>
+                <div><img src="culture2.jpeg" class="img2"></div>
+                <div><img src="maneki.jpg" class="img3"></div>
+            </div>
+            <div class="grupo2">
+                <div><img src="comida2.jpg" class="img4"></div>
+                <div><img src="mascote.jpg" class="img5"></div>
+                <div><img src="paisagem1.jpg" class="img6"></div>
+            </div>
         </section>
     </main>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.querySelector(".navbar").style.top = "0";
+                document.querySelector(".navbar").style.transition = "top 0.5s";
+            } else {
+                document.querySelector(".navbar").style.top = "-80px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 </body>
 </html>
