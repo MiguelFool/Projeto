@@ -39,10 +39,14 @@ body{
     letter-spacing: 0.1em;
     font-family: 'Limelight';
     color: #FFF;
-    border-radius: 5%;
+    border-radius: 5em;
 }
 .navbar a.nav-logo:hover{
-    background-color: gray;
+    background-color: rgb(240, 239, 239);
+    color: #252525;
+    transition: 0.5s;
+    filter: drop-shadow(0 0 2em #fff);
+    box-shadow: 0em 0em 2em #fff;
 }
 .navbar ul{
     float: right;
@@ -59,10 +63,14 @@ body{
     text-align: center;
     min-width: 4em;
     padding: 0 1em;
-    border-radius: 15%;
+    border-radius: 15em;
 }
 .navbar ul li a:hover{
-    background-color: gray;
+    background-color: rgb(240, 239, 239);
+    color: #252525;
+    transition: 0.5s;
+    filter: drop-shadow(0 0 2em #fff);
+    box-shadow: 0em 0em 2em #fff;
 }
 .section{
     display: flex;
@@ -109,6 +117,11 @@ body{
     border-radius: 2em;
     background-color: #252525;
 }
+.quad2 p:hover {
+    transition: 0.5s;
+    filter: drop-shadow(0 0 1em #FF0000);
+    box-shadow: 0em 0em 1em #FF0000;
+}
 .sobre {
     position: relative;
     text-align: center; /* Centraliza o conteúdo */
@@ -134,6 +147,11 @@ body{
     margin-right: 31%;
     border-radius: 2em;
     background-color: #252525;
+}
+.sobre div:hover{
+    transition: 0.5s;
+    filter: drop-shadow(0 0 2em #FF0000);
+    box-shadow: 0em 0em 2em #FF0000;
 }
 .nuvem1 {
     position: absolute;
@@ -197,6 +215,11 @@ body{
     font-size: 1.7em;
     color: #FFF;
     padding: 0.4em;
+}
+.curiosidades .div:hover{
+    transition: 0.5s;
+    filter: drop-shadow(0 0 2em #FF0000);
+    box-shadow: 0em 0em 2em #FF0000;
 }
 .curiosidades span{
     font-weight: bold;
@@ -267,4 +290,54 @@ body{
     margin-top: 5%; /* Espaçamento entre o primeiro parágrafo e a section */
     padding-bottom: 5%;
     padding-top: 3%;
+}
+.imagens img:hover{
+    transition: 0.5s;
+    filter: drop-shadow(0 0 2em #FF0000);
+    box-shadow: 0em 0em 2em #FF0000;
+}
+.feedback {
+    position: relative;
+    text-align: center; /* Centraliza o conteúdo */
+    margin-top: 10%; /* Espaçamento entre o primeiro parágrafo e a section */
+    padding-bottom: 5%;
+    padding-top: 3%;
+}
+.feedback h1 {
+    font-family: 'Supermercado One'; /* Define a fonte */
+    font-size: 4em; /* Define o tamanho da fonte */
+    color: #FFF;
+}
+.feedback label{
+    font-size: 2.5em;
+    color: #FFF;
+    font-family: 'Supermercado One';
+}
+.feedback textarea{
+    font-family: 'Roboto';
+    background-color: #252525;
+    color: #fff;
+    font-size: 2em;
+}
+.feedback input{
+    font-family: 'Supermercado One';
+    font-size: 2.5em;
+    align-self: flex-start;
+    background-color: #fff;
+    color: #252525;
+    border: 0;
+    padding: 0.4em 0.7em;
+    border-radius: 30em;
+}
+.feedback input:hover{
+    background-color: #252525;
+    color: #fff;
+    transition: 0.5s;
+    filter: drop-shadow(0 0 2em #FF0000);
+    box-shadow: 0em 0em 2em #FF0000;
+}
+.feedback textarea:hover{
+    transition: 0.5s;
+    filter: drop-shadow(0 0 1em #FF0000);
+    box-shadow: 0em 0em 1em #FF0000;
 }
