@@ -8,21 +8,21 @@ html{
     box-sizing: border-box;
 }
 body{
-    background-color: #4B4A4A;
+    background-color: #4a4b4a;
 }
 .navbar{
     background-color: #000;
     color: #fff;
     width: 100%;
-    line-height: 80px;
-    height: 80px;
-    font-size: 32px;
-    padding: 0 30px;
+    line-height: 2.5em;
+    height: 2.5em;
+    font-size: 2em;
+    padding: 0 2em;
     position: fixed;
     top: 0;
     left: 0;
     font-family: 'Supermercado One';
-    box-shadow: 0px 0px 63px rgb(0, 0, 0);
+    box-shadow: 0px 0px 3.9375em rgb(0, 0, 0);
     z-index: 999;
 }
 .navbar a{
@@ -33,12 +33,13 @@ body{
     float: left;
     height: inherit;
     line-height: inherit;
-    padding: 0 30px;
-    font-size: 64px;
+    padding: 0 1em;
+    font-size: 2em;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0.1em;
     font-family: 'Limelight';
     color: #FFF;
+    border-radius: 5%;
 }
 .navbar a.nav-logo:hover{
     background-color: gray;
@@ -48,7 +49,7 @@ body{
     list-style: none;
     height: inherit;
     line-height: inherit;
-    padding: 0 50px;
+    padding: 0 2.5em;
 }
 .navbar ul li{
     display: inline-block;
@@ -56,8 +57,9 @@ body{
 .navbar ul li a {
     display: block;
     text-align: center;
-    min-width: 120px;
-    padding: 0 30px;
+    min-width: 4em;
+    padding: 0 1em;
+    border-radius: 15%;
 }
 .navbar ul li a:hover{
     background-color: gray;
@@ -72,23 +74,23 @@ body{
     justify-content: center;
 }
 .fundo{
-    filter: drop-shadow(0 0 125px #FF0000);
+    filter: drop-shadow(0 0 5em #FF0000);
 }
 .quad {
     position: relative;
     margin-top: -8%;
     width: auto;
-    height: 43px;
+    height: 2em;
     background-color: #000; /* Cor de fundo do retângulo */
-    filter: blur(15px); /* Aplica o efeito de desfoque */
+    filter: blur(0.5em); /* Aplica o efeito de desfoque */
     z-index: 4;
 }
 .quad2{
     margin-top: -1%;
-    padding-top: 10px;
+    padding-top: 1em;
     position: relative;
     width: auto;
-    height: 300px;
+    height: 20em;
     background-color: #4B4A4A;
     z-index: 3;
 }
@@ -97,14 +99,14 @@ body{
     margin-left: 32%;
     margin-right: 19%;
     margin-top: 5%;
-    width: 732px;
+    width: 26em;
     font-family: 'Roboto';
-    font-size: 26px;
+    font-size: 1.7em;
     text-align: center;
     color: #FFF;
-    padding: 15px 15px 15px; /* Adiciona um preenchimento interno */
+    padding: 0.5em 0.5em 0.5em; /* Adiciona um preenchimento interno */
     z-index: 2;
-    border-radius: 40px;
+    border-radius: 2em;
     background-color: #252525;
 }
 .sobre {
@@ -116,13 +118,13 @@ body{
 }
 .sobre h1 {
     font-family: 'Supermercado One'; /* Define a fonte */
-    font-size: 64px; /* Define o tamanho da fonte */
+    font-size: 4em; /* Define o tamanho da fonte */
     color: #FFF;
 }
 .sobre p {
     margin: 2% 2%;
     font-family: 'Roboto'; /* Define a fonte */
-    font-size: 26px; /* Define o tamanho da fonte */
+    font-size: 1.7em; /* Define o tamanho da fonte */
     color: #FFF;
 }
 .sobre div{
@@ -130,7 +132,7 @@ body{
     margin: 2% 2%;
     margin-left: 31%;
     margin-right: 31%;
-    border-radius: 40px;
+    border-radius: 2em;
     background-color: #252525;
 }
 .nuvem1 {
@@ -153,21 +155,16 @@ body{
     bottom: 0;
     left: 5em;
 }
-.nuvem5{
-    position: absolute;
-    bottom: 0;
-    left: 45em;
-}
 .curiosidades {
     position: relative;
     text-align: center; /* Centraliza o conteúdo */
-    margin-top: 10%; /* Espaçamento entre o primeiro parágrafo e a section */
+    margin-top: 5%; /* Espaçamento entre o primeiro parágrafo e a section */
     padding-bottom: 5%;
     padding-top: 3%;
 }
 .curiosidades h1 {
     font-family: 'Supermercado One'; /* Define a fonte */
-    font-size: 64px; /* Define o tamanho da fonte */
+    font-size: 4em; /* Define o tamanho da fonte */
     color: #FFF;
 }
 .curiosidades .grupo1, .curiosidades .grupo2 {
@@ -175,7 +172,7 @@ body{
     margin-left: 2%;
     margin-right: 2%;
     flex-direction: row; /* Alinha as divs dos grupos em colunas */
-    gap: 20px; /* Espaçamento entre as divs dos grupos */
+    gap: 1em; /* Espaçamento entre as divs dos grupos */
 }
 
 .curiosidades .grupo1 div, .curiosidades .grupo2 div {
@@ -186,7 +183,7 @@ body{
     margin-right: 2%;
     align-items: flex-start;
     background-color: #252525;
-    border-radius: 40px;
+    border-radius: 2em;
 }
 .curiosidades .grupo1{
     margin-top: 3%;
@@ -197,46 +194,46 @@ body{
 }
 .curiosidades div p {
     font-family: 'Roboto';
-    font-size: 26px;
+    font-size: 1.7em;
     color: #FFF;
-    padding: 10px;
+    padding: 0.4em;
 }
 .curiosidades span{
     font-weight: bold;
 }
 .imagens .img1{
-    width: 436px;
-    height: 273px;
+    width: 29.625em;
+    height: 17.8125em;
 }
 .imagens .img2{
-    width: 475px;
-    height: 273px;
+    width: 29.625em;
+    height: 17.8125em;
 }
 .imagens .img3{
-    width: 413px;
-    height: 271px;
+    width: 29.625em;
+    height: 17.8125em;
 }
 .imagens .img4{
-    width: 474px;
-    height: 285px;
+    width: 29.625em;
+    height: 17.8125em;
 }
 .imagens .img5{
-    width: 463px;
-    height: 280px;
+    width: 29.625em;
+    height: 17.8125em;
 }
 .imagens .img6{
-    width: 413px;
-    height: 286px;
+    width: 29.625em;
+    height: 17.8125em;
 }
 .img1, .img2, .img3, .img4, .img5, .img6{
-    border: 10px solid black;
+    border: 0.5em solid black;
 } 
 .imagens .grupo1, .imagens .grupo2 {
     display: flex;
     margin-left: 2%;
     margin-right: 2%;
     flex-direction: row; /* Alinha as divs dos grupos em colunas */
-    gap: 20px; /* Espaçamento entre as divs dos grupos */
+    gap: 1em; /* Espaçamento entre as divs dos grupos */
 }
 .imagens .grupo1 div, .imagens .grupo2 div {
     display: flex;
@@ -255,13 +252,19 @@ body{
 }
 .imagens h1{
     font-family: 'Supermercado One'; /* Define a fonte */
-    font-size: 64px; /* Define o tamanho da fonte */
+    font-size: 4em; /* Define o tamanho da fonte */
+    color: #FFF;
+}
+.imagens h2{
+    margin-top: 2%;
+    font-family: 'Supermercado One';
+    font-size: 3em;
     color: #FFF;
 }
 .imagens {
     position: relative;
     text-align: center; /* Centraliza o conteúdo */
-    margin-top: 10%; /* Espaçamento entre o primeiro parágrafo e a section */
+    margin-top: 5%; /* Espaçamento entre o primeiro parágrafo e a section */
     padding-bottom: 5%;
     padding-top: 3%;
 }
