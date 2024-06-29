@@ -10,6 +10,9 @@ html{
 body{
     background-color: #4a4b4a;
 }
+.home{
+    width: 100%;
+}
 .navbar{
     background-color: #000;
     color: #fff;
@@ -17,7 +20,7 @@ body{
     line-height: 2.5em;
     height: 2.5em;
     font-size: 2em;
-    padding: 0 2em;
+    margin: 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -33,7 +36,7 @@ body{
     float: left;
     height: inherit;
     line-height: inherit;
-    padding: 0 1em;
+    margin: 0 0.5em;
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -49,11 +52,13 @@ body{
     box-shadow: 0em 0em 2em #fff;
 }
 .navbar ul{
+    position: fixed;
     float: right;
     list-style: none;
     height: inherit;
     line-height: inherit;
-    padding: 0 2.5em;
+    margin: 0 0 0 2.5em ;
+    right: 1em;
 }
 .navbar ul li{
     display: inline-block;
@@ -62,7 +67,7 @@ body{
     display: block;
     text-align: center;
     min-width: 4em;
-    padding: 0 1em;
+    padding: 0 0 0 1em;
     border-radius: 15em;
 }
 .navbar ul li a:hover{
@@ -103,9 +108,9 @@ body{
     z-index: 3;
 }
 .quad2 p {
-    position: relative; /* Adiciona posicionamento relativo */
-    margin-left: 32%;
-    margin-right: 19%;
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
     margin-top: 5%;
     width: 26em;
     font-family: 'Roboto';
@@ -125,27 +130,22 @@ body{
 .sobre {
     position: relative;
     text-align: center; /* Centraliza o conteúdo */
-    margin-top: 10%; /* Espaçamento entre o primeiro parágrafo e a section */
+    margin-top: 15em; /* Espaçamento entre o primeiro parágrafo e a section */
     padding-bottom: 5%;
     padding-top: 3%;
 }
 .sobre h1 {
+    position: inherit;
     font-family: 'Supermercado One'; /* Define a fonte */
     font-size: 4em; /* Define o tamanho da fonte */
     color: #FFF;
-}
-.sobre p {
-    margin: 2% 2%;
-    font-family: 'Roboto'; /* Define a fonte */
-    font-size: 1.7em; /* Define o tamanho da fonte */
-    color: #FFF;
+    z-index: 999;
 }
 .sobre div{
-    padding: 1%;
-    margin: 2% 2%;
-    margin-left: 31%;
-    margin-right: 31%;
-    border-radius: 2em;
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3em;
     background-color: #252525;
 }
 .sobre div:hover{
@@ -153,25 +153,35 @@ body{
     filter: drop-shadow(0 0 2em #FF0000);
     box-shadow: 0em 0em 2em #FF0000;
 }
+.sobre p {
+    padding: 2.5%;
+    font-family: 'Roboto'; /* Define a fonte */
+    font-size: 1.7em; /* Define o tamanho da fonte */
+    color: #FFF;
+}
 .nuvem1 {
     position: absolute;
     top: 0;
     left: 5em;
+    z-index: 0;
 }
 .nuvem2 {
     position: absolute;
     top: 0;
     right: 5em;
+    z-index: 0;
 }
 .nuvem3 {
     position: absolute;
     bottom: 0;
     right: 5em;
+    z-index: 0;
 }
 .nuvem4 {
     position: absolute;
     bottom: 0;
     left: 5em;
+    z-index: 0;
 }
 .curiosidades {
     position: relative;
@@ -340,4 +350,66 @@ body{
     transition: 0.5s;
     filter: drop-shadow(0 0 1em #FF0000);
     box-shadow: 0em 0em 1em #FF0000;
+}
+.menu-button{
+    position: fixed;
+    width: 5em;
+    height: 5em;
+    top: 0em;
+    left: -7em;
+    background-color: transparent;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+.menu-svg{
+    width: inherit;
+    height: inherit;
+    background-color: transparent;
+}
+.navcol{
+    background-color: #000;
+    color: #fff;
+    width: 7em;
+    line-height: 1.5em;
+    height: 100%;
+    font-size: 1.5em;
+    padding: 0 0.3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: 'Supermercado One';
+    overflow: hidden;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+.navcol a{
+    text-decoration: none;
+    color: #fff;
+}
+.navcol ul{
+    padding: 3em 0 0 0;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+}
+.hidden{
+    left: -7em;
+}
+@media (max-width: 1000px){
+    .navbar{
+        margin: -100em;
+        padding: -100em;
+    }
+    .menu-button{ 
+        left: 0.15em;
+    }
+    .imagens .grupo1, .imagens .grupo2 {
+        display: flex;
+        margin-left: 2%;
+        margin-right: 2%;
+        flex-direction: column; 
+        gap: 1em; 
+    }
 }

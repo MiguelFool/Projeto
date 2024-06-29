@@ -18,6 +18,20 @@
                 <li><a href="#feedback">FeedBack</a></li>
             </ul>
         </nav>
+        <button class="menu-button" id="menu-button" onclick="toggleMenu()">
+            <svg class="menu-svg" id="menu-svg">
+                <use xlink:href="burger-menu.svg#burger-menu" id="burger-icon" class="menu"></use>
+            </svg>
+        </button>
+        <nav class="navcol hidden " id="navcol">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="#imagens">Imagens</a></li>
+                <li><a href="#feedback">FeedBack</a></li>
+            </ul>
+        </nav>
     </header>
     <main class="home">
         <section class="img">
@@ -32,11 +46,11 @@
             <img class="nuvem3" src="nuvem.png" alt="">
             <img class="nuvem4" src="nuvem.png" alt="">
             <div>
-            <p>A cultura japonesa é uma jornada de descobertas fascinantes que encantam os sentidos e a alma. Seu tecido cultural é entrelaçado com uma tapeçaria de tradições antigas e inovações modernas, criando uma atmosfera única que é ao mesmo tempo reverenciadora do passado e fervilhante com a energia do futuro.</p>
+            <p>A cultura japonesa é uma jornada de descobertas fascinantes que encantam os sentidos e a alma. Seu tecido cultural é entrelaçado com uma tapeçaria de tradições antigas e inovações modernas, criando uma atmosfera única que é ao mesmo tempo reverenciadora do passado e fervilhante com a energia do futuro.
 
-                <p>Os templos ancestrais, com sua arquitetura majestosa e serenidade espiritual, são pilares da cultura japonesa. Esses locais sagrados não são apenas testemunhas do passado, mas também pontos de encontro entre o divino e o terreno, onde os visitantes podem experimentar uma profunda conexão com a história e a espiritualidade do Japão.</p>
+                <br>Os templos ancestrais, com sua arquitetura majestosa e serenidade espiritual, são pilares da cultura japonesa. Esses locais sagrados não são apenas testemunhas do passado, mas também pontos de encontro entre o divino e o terreno, onde os visitantes podem experimentar uma profunda conexão com a história e a espiritualidade do Japão.
                 
-                <p>A gastronomia japonesa é uma verdadeira obra de arte culinária, caracterizada por sua delicadeza, frescor e atenção aos detalhes. Desde o sabor refinado do sushi até a reconfortante tigela de ramen, cada prato é uma celebração dos ingredientes locais e da habilidade dos chefs em transformá-los em experiências sensoriais memoráveis.</p>
+                <br>A gastronomia japonesa é uma verdadeira obra de arte culinária, caracterizada por sua delicadeza, frescor e atenção aos detalhes. Desde o sabor refinado do sushi até a reconfortante tigela de ramen, cada prato é uma celebração dos ingredientes locais e da habilidade dos chefs em transformá-los em experiências sensoriais memoráveis.</p>
             </div>
         </section>
         <section class="curiosidades" id="curiosidades">
@@ -114,18 +128,6 @@
             </div>
         </section>
     </main>
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.querySelector(".navbar").style.top = "0";
-                document.querySelector(".navbar").style.transition = "top 0.5s";
-            } else {
-                document.querySelector(".navbar").style.top = "-80px";
-            }
-            prevScrollpos = currentScrollPos;
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
